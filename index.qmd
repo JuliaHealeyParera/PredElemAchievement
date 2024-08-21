@@ -7,7 +7,7 @@ editor:
     wrap: 72
 ---
 
-# Predicting and Analyzing Elementary Achievement Rates
+# **Predicting and Analyzing Elementary Achievement Rates**
 
 ##### Alan Qiao, Julia Healey-Parera, Anushka Kumar, Noah Tajudeen 
 
@@ -50,7 +50,7 @@ scores <- read_csv("data/scores.csv")
 us_states <- map_data("state")
 ```
 
-## **Introductory Context**
+### **Introductory Context**
 
 The FOCUS cluster, Knowledge in the Service of Society, affectionately
 dubbed KISS, is an educational program that empowers students with
@@ -105,7 +105,7 @@ this was acceptable in the context because it is realistic for there to
 be a years-long delay between changes in community funding and resources
 and subsequent academic improvements.
 
-## **Reading Level Distributions**
+### **Reading Level Distributions**
 
 Code for us_states from Kieran Healy:
 `https://socviz.co/maps.html#map-u.s.-state-level-data`
@@ -201,7 +201,7 @@ us_states_expenditures <- us_states |>
   filter(year == 2016)
 ```
 
-## **Educational Funding Distribution**
+### **Educational Funding Distribution**
 
 ```{r}
 #| label: us-map-expenditures 
@@ -274,7 +274,7 @@ merged_data <- left_join(
 
 ```
 
-## **Predictive Model of 4th Grade Reading Levels**
+### **Predictive Model of 4th Grade Reading Levels**
 
 **Literature Review:** What factors are most important in predicting
 elementary academic achievement levels?
@@ -516,7 +516,7 @@ best fit and it includes the predictors `family_poverty` ,
 `average_family_child_care`, and `one_parent_households`. Still, the
 adjusted-R2 is only 0.06.
 
-## **Visualizing Job Distributions in Best-Practice States**
+### **Visualizing Job Distributions in Best-Practice States**
 
 ```{r}
 #| label: preparing-data-for-vis-3
@@ -639,7 +639,7 @@ personal upbringings ultimately speaks to the data-driven fact that high
 achievement is associated with specific industry, making this
 visualization both personally and mathematically impactful.
 
-## **Conclusion**
+### **Conclusion**
 
 Overall, our conclusions illuminate opportunities for political and
 programmatic interventions. Visualization #1 identifies the states with
@@ -691,7 +691,7 @@ Research effort should also be made to replicate these analyses but with
 a more holistic outcome measure, such as overall classroom functioning
 as reported by teachers.
 
-## Works Cited
+### Works Cited
 
 "EARLY SKILLS AND PREDICTORS OF ACADEMIC SUCCESS." Connecticut
 Government, Hanover Research, Nov. 2016,
